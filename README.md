@@ -4,9 +4,9 @@
 リポジトリをクローンしたら、その中に、<br>
 `cub3D（実行ファイル）`と`libmlx.dylib（必要に応じて読み替えてください）`<br>
 をコピーします。<br>
-<br>
 `chmod 000 map_files/error_permission.cub`<br>
 を実行します。<br>
+<br>
 その後、<br>
 `sh error_test.sh`<br>
 を実行します。<br>
