@@ -24,6 +24,7 @@
 例）<br>
 `sh error_test.sh window`<br>
 windowに関するエラーだけを実行することができます。<br>
+下の、「現在対応しているエラー」を参考に、検索ワードを入れてみてください。<br>
 
 # おまけ
 `sh error_test.sh sub`<br>
