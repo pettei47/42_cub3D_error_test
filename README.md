@@ -2,7 +2,7 @@
 
 # 基本の使い方
 リポジトリをクローンしたら、その中に、<br>
-`cub3D（実行ファイル）`と`libmlx.dylib`<br>
+`cub3D（実行ファイル）`と`libmlx.dylib（必要に応じて読み替えてください）`<br>
 をコピーします。<br>
 `sh error_test.sh`<br>
 を実行します。<br>
