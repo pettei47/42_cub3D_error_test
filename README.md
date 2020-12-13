@@ -4,6 +4,10 @@
 リポジトリをクローンしたら、その中に、<br>
 `cub3D（実行ファイル）`と`libmlx.dylib（必要に応じて読み替えてください）`<br>
 をコピーします。<br>
+<br>
+`chmod 000 map_files/error_permission.cub`<br>
+を実行します。<br>
+その後、<br>
 `sh error_test.sh`<br>
 を実行します。<br>
 <br>
@@ -84,7 +88,6 @@ error_multiple_player.cub　　 スタート位置が2つある
 error_no_cub.txt　　　　　　　　cubファイルの拡張子が.cubでない
 error_no_player.cub　　　　　　スタート位置がmap内にない
 error_open_map.cub　　　　　　　mapが閉じていない
-error_read_permission.cub　　　cubファイルの読み取り権限がない（333）
 error_too_big_mapx.cub　　　　　x軸方向にmapが大きすぎる（500以上）　→人によってはエラーにならないです
 error_too_big_mapy.cub　　　　　y軸方向にmapが大きすぎる（500以上）　→人によってはエラーにならないです
 error_under_map_something.cub マップより下にまだ何か書いてある
