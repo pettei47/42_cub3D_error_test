@@ -11,6 +11,7 @@
 `ok_`で始まるファイル名のものは、必須パートでは起動するはずのものです。<br>
 `./cub3D map_files/ok_***.cub`<br>
 で実行してみましょう<br>
+（`.ok_hidden_file.cub`という、隠しファイルも存在します。）<br>
 
 # 特定のテストだけをしたい場合
 `sh error_test.sh "文字列(チェックしたいエラー)"`<br>
@@ -83,7 +84,6 @@ error_multiple_player.cub　　 スタート位置が2つある
 error_no_cub.txt　　　　　　　　cubファイルの拡張子が.cubでない
 error_no_player.cub　　　　　　スタート位置がmap内にない
 error_open_map.cub　　　　　　　mapが閉じていない
-error_permission.cub　　　　　　cubファイルの権限がない（000）
 error_read_permission.cub　　　cubファイルの読み取り権限がない（333）
 error_too_big_mapx.cub　　　　　x軸方向にmapが大きすぎる（500以上）　→人によってはエラーにならないです
 error_too_big_mapy.cub　　　　　y軸方向にmapが大きすぎる（500以上）　→人によってはエラーにならないです
