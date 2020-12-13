@@ -5,7 +5,7 @@
 `cub3D（実行ファイル）`と`libmlx.dylib（必要に応じて読み替えてください）`<br>
 をコピーします。<br>
 `chmod 000 map_files/error_permission.cub`<br>
-を実行します。<br>
+を実行します。（権限のないままではgitに上げられませんでした…）<br>
 <br>
 その後、<br>
 `sh error_test.sh`<br>
