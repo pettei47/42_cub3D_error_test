@@ -1,7 +1,9 @@
 # 42_cub3D_error_test
 
 # 基本の使い方
-リポジトリをクローンしたら、その中に、cub3D（実行ファイル）をコピーします。<br>
+リポジトリをクローンしたら、その中に、<br>
+`cub3D（実行ファイル）`と`libmlx.dylib`<br>
+をコピーします。<br>
 `sh error_test.sh`<br>
 を実行します。<br>
 <br>
