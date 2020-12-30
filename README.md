@@ -1,9 +1,21 @@
 # 42_cub3D_error_test
 
 # 基本の使い方
-リポジトリをクローンしたら、その中に、cub3D（実行ファイル）をコピーします。<br>
+リポジトリをクローンしたら、その中に、<br>
+`cub3D（実行ファイル）`と`libmlx.dylib（必要に応じて読み替えてください）`<br>
+をコピーします。<br>
+`chmod 000 map_files/error_permission.cub`<br>
+を実行します。（権限のないままではgitに上げられませんでした…）<br>
+<br>
+その後、<br>
 `sh error_test.sh`<br>
 を実行します。<br>
+<br>
+<br>
+`ok_`で始まるファイル名のものは、必須パートでは起動するはずのものです。<br>
+`./cub3D map_files/ok_***.cub`<br>
+で実行してみましょう<br>
+（`.ok_hidden_file.cub`という、隠しファイルも存在します。）<br>
 
 # 特定のテストだけをしたい場合
 `sh error_test.sh "文字列(チェックしたいエラー)"`<br>
@@ -12,10 +24,12 @@
 例）<br>
 `sh error_test.sh window`<br>
 windowに関するエラーだけを実行することができます。<br>
+下の、「現在対応しているエラー」を参考に、検索ワードを入れてみてください。<br>
 
 # おまけ
 `sh error_test.sh sub`<br>
 を実行すると、サブディレクトリの中にcubファイルがある場合についても確認してくれます。<br>
+サブディレクトリでも".cub"のみのファイルがちゃんとエラーになるでしょうか？<br>
 
 # おまけ2
 自分でエラーファイルを新たに作った場合は、map_filesディレクトリに、<br>
@@ -28,10 +42,16 @@ windowに関するエラーだけを実行することができます。<br>
 このエラーだけを確認したい場合は、以下のコマンドを実行することをおすすめします。<br>
 `./cub3D map_files/.cub`<br>
 `./cub3D map_files/nothing.cub`<br>
+<br>
+`warning_splite_fill.cub`<br>
+というファイルには、<br>
+256×256サイズで、外壁とスタート位置以外全てがスプライトのmapが入っています。<br>
+実行は自己責任でお願いします。（通常の実行ではスルーする仕様になっています）<br>
 
 # チェックしてくれているエラー一覧
 現在、以下のエラーに対応しています。（ファイル名順）
 ```
+.cub　　　　　　　　　　　　　　　ファイル名が".cub"
 error_3.cub　　　　　　　　　　　mapに012以外が含まれている。
 error_corner_start.cub　　　　スタート位置がmapの角（外）にある（mapが閉じていないエラー）
 error_elemC_alpha.cub　　　　　C（天井の色）にアルファベットが含まれている
@@ -71,8 +91,6 @@ error_multiple_player.cub　　 スタート位置が2つある
 error_no_cub.txt　　　　　　　　cubファイルの拡張子が.cubでない
 error_no_player.cub　　　　　　スタート位置がmap内にない
 error_open_map.cub　　　　　　　mapが閉じていない
-error_permission.cub　　　　　　cubファイルの権限がない（000）
-error_read_permission.cub　　　cubファイルの読み取り権限がない（333）
 error_too_big_mapx.cub　　　　　x軸方向にmapが大きすぎる（500以上）　→人によってはエラーにならないです
 error_too_big_mapy.cub　　　　　y軸方向にmapが大きすぎる（500以上）　→人によってはエラーにならないです
 error_under_map_something.cub マップより下にまだ何か書いてある
