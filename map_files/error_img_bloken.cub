@@ -1,5 +1,5 @@
-R 99999999999999999999999 520
-NO ./images/kita.xpm
+R 520 380
+NO ./images/bloken_kita.xpm
 SO ./images/minami.xpm
 WE ./images/nishi.xpm
 EA ./images/higashi.xpm
