@@ -13,20 +13,20 @@ if [ -z "$1" ]; then
       ((++ok_count))
     else
       ((++ng_count))
-      ng_files=("$file" "${ng_files[@]}")
+      ng_files=("$2" "${ng_files[@]}")
     fi
   }
 	for file in `find map_files -maxdepth 1 -name 'error_*' | sort`; do
 		echo ./cub3D "$file"
 		./cub3D "$file"
-    judge "$?"
+    judge "$?" "$file"
 	done
 	echo ./cub3D map_files/.cub
 	./cub3D map_files/.cub
-  judge "$?"
+  judge "$?" map_files/.cub
 	echo ./cub3D map_files/nothing.cub
 	./cub3D map_files/nothing.cub
-  judge "$?"
+  judge "$?" map_files/nothing.cub
   printf "${GREEN}OK: ${ok_count}${NC}\n"
   printf "${RED}NG: ${ng_count}${NC}\n"
   printf "${RED}=============== ERROR FILE LIST ===============${NC}\n"
